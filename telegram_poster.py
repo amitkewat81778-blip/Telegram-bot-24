@@ -6,9 +6,11 @@ def post_news(bot_token, channels, news):
     for item in news:
         title_hi = to_hindi(item.get("title", ""))
         summary_hi = to_hindi(item.get("summary", ""))
-        msg = f"🔸 *{title_hi}*
-{summary_hi}
-🔗 {item.get('url') or item.get('link')}"
+        msg = (
+            f"🔸 *{title_hi}*\n"
+            f"{summary_hi}\n"
+            f"🔗 {item.get('url') or item.get('link')}"
+        )
         for ch in channels:
             try:
                 bot.send_message(chat_id=ch, text=msg, parse_mode='Markdown')
