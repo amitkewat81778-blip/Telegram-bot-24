@@ -1,0 +1,3 @@
+TOKEN = "8463110659:AAHwP87YX4mmWL7cz4mAq2a2-8f2jgMIMpw"
+CHANNELS = ["@amit81780", "@TechBuzzUpdates", "@TechFlash24x7"]
+POST_INTERVAL_MIN = 30
